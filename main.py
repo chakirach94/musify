@@ -44,7 +44,7 @@ def trendsuser(country):
   querystring = {"country":country,"type":"music"}
 
   headers = {
-    "X-RapidAPI-Key": "f6655060bfmsh3e3d5bd7af39d01p14b314jsnfa51b3d0c068",
+    "X-RapidAPI-Key": "a3e5a1eba4mshaac9e2bcc2d9949p1eec49jsn6230f553eb03",
     "X-RapidAPI-Host": "youtube-trending.p.rapidapi.com"
   }
 
@@ -62,11 +62,10 @@ def tryexcept(hliwa,word):
 #addddd 
 def getchaininformations(id):
   url = "https://youtube-media-downloader.p.rapidapi.com/v2/channel/details"
-
   querystring = {"channelId":id}
 
   headers = {
-    "X-RapidAPI-Key": "68a49ac1a2msh3a7b4896a584357p137023jsn9db99d40833e",
+    "X-RapidAPI-Key": "a3e5a1eba4mshaac9e2bcc2d9949p1eec49jsn6230f553eb03",
     "X-RapidAPI-Host": "youtube-media-downloader.p.rapidapi.com"
   }
 
@@ -82,7 +81,7 @@ def getlinkfromid(id):
   url = "https://ytstream-download-youtube-videos.p.rapidapi.com/dl"
   querystring = {"id":id}
   headers = {
-    "X-RapidAPI-Key": "68a49ac1a2msh3a7b4896a584357p137023jsn9db99d40833e",
+    "X-RapidAPI-Key": "a3e5a1eba4mshaac9e2bcc2d9949p1eec49jsn6230f553eb03",
     "X-RapidAPI-Host": "ytstream-download-youtube-videos.p.rapidapi.com"
   }
   response2 = requests.request("GET", url, headers=headers, params=querystring)
@@ -100,7 +99,7 @@ def getvideosfromuser(id):
   url = "https://youtube-media-downloader.p.rapidapi.com/v2/channel/videos"
   querystring = {"channelId":id}
   headers = {
-    "X-RapidAPI-Key": "68a49ac1a2msh3a7b4896a584357p137023jsn9db99d40833e",
+    "X-RapidAPI-Key": "a3e5a1eba4mshaac9e2bcc2d9949p1eec49jsn6230f553eb03",
     "X-RapidAPI-Host": "youtube-media-downloader.p.rapidapi.com"
   }
   response = requests.request("GET", url, headers=headers, params=querystring)
